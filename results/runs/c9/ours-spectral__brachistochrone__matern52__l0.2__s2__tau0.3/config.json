@@ -1,0 +1,15 @@
+{
+ "method": "ours-spectral",
+ "target": "brachistochrone",
+ "lengthscale": 0.2,
+ "profile": "matern52",
+ "seed": 2,
+ "tau": 0.3,
+ "max_degree": null,
+ "initial_acquisitions": 10,
+ "minimum_k": 1,
+ "maximum_k": 10,
+ "acquisitions_each_k": 10,
+ "acquisition_raw_samples": 1024,
+ "acquisition_max_restarts": 16
+}

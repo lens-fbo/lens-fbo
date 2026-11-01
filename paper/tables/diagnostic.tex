@@ -1,0 +1,28 @@
+\begin{table}[t]
+\centering
+\caption{Held-out predictive quality of GPs that differ only in their metric, on candidates drawn as \lzero{} screens them: mean Spearman correlation / negative log predictive density over four random splits, 50 training and 150 test candidates (100 for MNIST, Pendulum, Pinwheel and Hopper), Matérn-5/2 profile. $\hat b$: fitted decay of the decay family. Best Spearman correlation in bold.}
+\label{tab:diagnostic}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccccr}
+\toprule
+Benchmark & RKHS & $L^2(\mathcal{D})$ & decay & spectral & $\hat b$ \\
+\midrule
+Sinc-1D & 0.95 / \textminus{}0.22 & \textbf{0.99 / \textminus{}0.58} & \textbf{0.99 / \textminus{}0.60} & \textbf{0.99 / \textminus{}0.73} & $-0.02$ \\
+Sinc-2D & 0.95 / +0.04 & \textbf{0.99 / \textminus{}0.25} & 0.98 / \textminus{}0.29 & 0.97 / \textminus{}0.35 & $-0.09$ \\
+Sinc-3D & 0.96 / +0.52 & \textbf{0.99 / +0.06} & 0.98 / \textminus{}0.04 & 0.97 / +0.01 & $-0.21$ \\
+Sinc-4D & 0.91 / +0.59 & \textbf{0.99 / \textminus{}0.42} & 0.98 / \textminus{}0.47 & 0.98 / \textminus{}0.50 & $-0.28$ \\
+Sinc-5D & 0.94 / +0.52 & \textbf{0.99 / \textminus{}0.38} & \textbf{0.99 / \textminus{}0.49} & 0.98 / \textminus{}0.53 & $-0.41$ \\
+GramacyLee & 0.38 / +1.24 & 0.63 / +1.02 & 0.84 / +0.46 & \textbf{0.94 / \textminus{}0.40} & $-2.33$ \\
+Ackley & 0.53 / +1.26 & 0.73 / +1.00 & \textbf{0.75 / +0.98} & 0.74 / +0.99 & $-0.44$ \\
+Hartmann & 0.92 / +0.37 & 0.99 / \textminus{}0.76 & \textbf{1.00 / \textminus{}1.60} & \textbf{1.00 / \textminus{}1.77} & $-1.63$ \\
+Rosenbrock & 0.96 / +0.28 & 0.99 / \textminus{}0.37 & 0.99 / \textminus{}0.68 & \textbf{1.00 / \textminus{}1.29} & $-0.89$ \\
+Michalewicz & 0.93 / +0.44 & 0.97 / \textminus{}0.05 & \textbf{0.98 / \textminus{}0.25} & \textbf{0.98 / \textminus{}0.40} & $-0.91$ \\
+Brachistochrone & 0.73 / +0.91 & 0.66 / +0.95 & \textbf{0.76 / +0.76} & 0.74 / +0.86 & $+0.47$ \\
+MNIST & \textbf{0.67 / +1.34} & 0.40 / +1.35 & 0.57 / +1.46 & 0.57 / +1.58 & $+0.86$ \\
+Pendulum & 0.74 / +0.81 & 0.80 / +0.73 & 0.79 / +0.76 & \textbf{0.87 / +0.61} & $+0.20$ \\
+Pinwheel & 0.48 / +1.28 & \textbf{0.52 / +1.31} & 0.48 / +1.30 & 0.48 / +1.40 & $+0.37$ \\
+Hopper & 0.45 / +0.96 & \textbf{0.46 / +0.94} & \textbf{0.46 / +0.96} & 0.43 / +1.06 & $-0.21$ \\
+\bottomrule
+\end{tabular}
+\end{table}

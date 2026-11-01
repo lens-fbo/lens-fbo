@@ -1,0 +1,65 @@
+\begin{table}[!tp]
+\centering
+\caption{Average regret (mean of the running best): median and 95\% CI of the median over 32 seeds. The baselines as reported by \citet{sartor2026sparse}, each at the configuration they report; \method{} at the GP profile selected by the same rule on its own runs, and at Mat\'ern-5/2 on every benchmark. Bold: lowest median, and every method whose CI contains it. \ding{55}: not applicable (Vellanki needs a one-dimensional domain). $^\dagger$: the released code does not attain the value reported for \lzero{} there (Section~\ref{sec:setup}).}
+\label{tab:main-average}
+\setlength{\tabcolsep}{3pt}
+\footnotesize
+\begin{tabular}{lccc}
+\toprule
+\textbf{Method} & \textbf{Sinc-1D} [$10^{-2}$] & \textbf{Sinc-2D} [$10^{-2}$] & \textbf{Sinc-3D} [$10^{-2}$] \\
+\midrule
+Random & $8.02\ [6.26, 8.89]$ & $6.80\ [6.52, 7.20]$ & $5.22\ [5.04, 5.41]$ \\
+Kundu & $8.48\ [7.79, 8.69]$ & $6.45\ [6.37, 6.55]$ & $5.09\ [5.00, 5.19]$ \\
+Vien & $2.58\ [2.31, 2.82]$ & $4.74\ [4.37, 5.06]$ & $3.96\ [3.78, 4.05]$ \\
+Shilton & $6.86\ [6.16, 7.72]$ & $6.66\ [6.42, 7.04]$ & $5.46\ [5.12, 5.68]$ \\
+Vellanki & $9.65\ [9.62, 9.73]$ & \text{\ding{55}} & \text{\ding{55}} \\
+L0MO & $\mathbf{1.93\ [1.85, 2.04]}$ & $2.70\ [2.65, 2.81]$ & $3.40\ [3.36, 3.44]$ \\
+\ourss{} & $\mathbf{1.88\ [1.77, 2.01]}$ & $\mathbf{2.63\ [2.58, 2.66]}$ & $\mathbf{3.20\ [3.17, 3.24]}$ \\
+\ourss{} (Mat\'ern-5/2) & $\mathbf{1.90\ [1.77, 1.99]}$ & $\mathbf{2.63\ [2.58, 2.66]}$ & $\mathbf{3.20\ [3.17, 3.24]}$ \\
+\midrule\midrule
+\textbf{Method} & \textbf{Sinc-4D} [$10^{-2}$] & \textbf{Sinc-5D} [$10^{-2}$] & \textbf{GramacyLee} [$10^{-1}$] \\
+\midrule
+Random & $3.62\ [3.58, 3.75]$ & $4.59\ [4.49, 4.72]$ & $5.53\ [5.38, 5.61]$ \\
+Kundu & $4.39\ [4.19, 4.54]$ & $4.85\ [4.75, 4.92]$ & $6.56\ [6.50, 6.65]$ \\
+Vien & $\mathbf{2.73\ [2.68, 2.76]}$ & $\mathbf{3.68\ [3.64, 3.71]}$ & $5.45\ [5.39, 5.53]$ \\
+Shilton & $5.37\ [4.79, 6.00]$ & $6.55\ [6.05, 6.96]$ & $5.50\ [5.38, 5.63]$ \\
+Vellanki & \text{\ding{55}} & \text{\ding{55}} & $5.52\ [5.41, 6.48]$ \\
+L0MO & $\mathbf{2.73\ [2.70, 2.79]}$ & $\mathbf{3.67\ [3.63, 3.70]}$ & $4.35\ [4.01, 5.04]$ \\
+\ourss{} & $\mathbf{2.74\ [2.69, 2.79]}$ & $4.17\ [3.86, 4.20]$ & $\mathbf{2.92\ [2.67, 3.22]}$ \\
+\ourss{} (Mat\'ern-5/2) & $\mathbf{2.74\ [2.70, 2.82]}$ & $4.14\ [3.93, 4.22]$ & $\mathbf{2.80\ [2.55, 3.01]}$ \\
+\midrule\midrule
+\textbf{Method} & \textbf{Ackley} [$10^{1}$] & \textbf{Hartmann} [$10^{0}$] & \textbf{Rosenbrock} [$10^{4}$] \\
+\midrule
+Random & $1.58\ [1.55, 1.59]$ & $3.14\ [3.11, 3.16]$ & $6.57\ [6.51, 6.63]$ \\
+Kundu & $1.60\ [1.58, 1.61]$ & $2.94\ [2.91, 2.95]$ & $5.91\ [5.85, 5.94]$ \\
+Vien & $1.60\ [1.57, 1.62]$ & $2.56\ [2.54, 2.58]$ & $5.39\ [5.33, 5.49]$ \\
+Shilton & $1.39\ [1.35, 1.41]$ & $2.58\ [2.52, 2.59]$ & $5.05\ [4.97, 5.13]$ \\
+Vellanki & \text{\ding{55}} & \text{\ding{55}} & \text{\ding{55}} \\
+L0MO & $0.66\ [0.61, 0.84]$ & $1.36\ [1.35, 1.37]$ & $3.04\ [2.90, 3.20]$ \\
+\ourss{} & $0.716\ [0.606, 0.882]$ & $\mathbf{1.29\ [1.29, 1.29]}$ & $\mathbf{1.76\ [1.75, 1.78]}$ \\
+\ourss{} (Mat\'ern-5/2) & $\mathbf{0.533\ [0.483, 0.548]}$ & $\mathbf{1.29\ [1.29, 1.29]}$ & $\mathbf{1.76\ [1.75, 1.78]}$ \\
+\midrule\midrule
+\textbf{Method} & \textbf{Michalewicz} [$10^{0}$] & \textbf{Brachistochrone} [$10^{-2}$] & \textbf{MNIST}$^\dagger$ [$10^{-2}$] \\
+\midrule
+Random & $4.20\ [4.18, 4.21]$ & $12.4\ [11.8, 13.0]$ & $2.18\ [2.15, 2.19]$ \\
+Kundu & $3.96\ [3.93, 3.97]$ & $10.8\ [10.3, 11.3]$ & $2.25\ [2.23, 2.27]$ \\
+Vien & $3.74\ [3.72, 3.75]$ & $7.42\ [7.15, 7.83]$ & $2.17\ [2.16, 2.20]$ \\
+Shilton & $3.81\ [3.79, 3.82]$ & $\mathbf{5.07\ [3.91, 6.78]}$ & $2.15\ [2.14, 2.20]$ \\
+Vellanki & \text{\ding{55}} & $9.15\ [8.98, 9.42]$ & $2.36\ [2.23, 2.93]$ \\
+L0MO & $3.22\ [3.21, 3.22]$ & $\mathbf{4.71\ [4.46, 4.83]}$ & $\mathbf{2.11\ [2.10, 2.12]}$ \\
+\ourss{} & $\mathbf{2.51\ [2.49, 2.53]}$ & $\mathbf{4.74\ [4.52, 4.97]}$ & $2.23\ [2.22, 2.25]$ \\
+\ourss{} (Mat\'ern-5/2) & $\mathbf{2.52\ [2.50, 2.55]}$ & $\mathbf{4.61\ [4.44, 4.81]}$ & $2.25\ [2.25, 2.26]$ \\
+\midrule\midrule
+\textbf{Method} & \textbf{Pendulum} [$10^{2}$] & \textbf{Pinwheel}$^\dagger$ [$10^{0}$] & \textbf{Hopper} [$-10^{0}$] \\
+\midrule
+Random & $5.29\ [5.22, 5.31]$ & $1.99\ [1.87, 2.03]$ & $1.84\ [1.75, 1.95]$ \\
+Kundu & $5.08\ [5.05, 5.13]$ & $1.75\ [1.68, 1.83]$ & $1.87\ [1.79, 1.98]$ \\
+Vien & $5.05\ [5.01, 5.12]$ & $2.95\ [2.86, 3.08]$ & $1.53\ [1.50, 1.54]$ \\
+Shilton & $4.74\ [4.72, 4.77]$ & $1.73\ [1.69, 1.77]$ & $2.23\ [2.19, 2.28]$ \\
+Vellanki & \text{\ding{55}} & $2.80\ [2.79, 2.81]$ & $1.46\ [1.46, 1.46]$ \\
+L0MO & $4.22\ [4.12, 4.33]$ & $\mathbf{1.07\ [1.02, 1.22]}$ & $\mathbf{2.36\ [2.28, 2.53]}$ \\
+\ourss{} & $\mathbf{3.81\ [3.72, 3.99]}$ & $2.40\ [2.28, 2.47]$ & $2.11\ [1.96, 2.34]$ \\
+\ourss{} (Mat\'ern-5/2) & $4.00\ [3.96, 4.11]$ & $2.50\ [2.38, 2.58]$ & $2.11\ [1.96, 2.34]$ \\
+\bottomrule
+\end{tabular}
+\end{table}

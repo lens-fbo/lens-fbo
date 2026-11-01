@@ -1,0 +1,14 @@
+{
+ "method": "ours-decay",
+ "target": "sinc2d",
+ "lengthscale": 0.1,
+ "profile": "matern32",
+ "seed": 5,
+ "tau": 1.0,
+ "initial_acquisitions": 10,
+ "minimum_k": 1,
+ "maximum_k": 10,
+ "acquisitions_each_k": 10,
+ "acquisition_raw_samples": 1024,
+ "acquisition_max_restarts": 16
+}

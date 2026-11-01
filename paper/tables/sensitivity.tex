@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering
+\caption{Sensitivity of \method{} to its own hyperparameters: median best value at the end of the run over 16 seeds, Mat\'ern-5/2, at the default prior scale $\tau = 1$ and basis degree $J_0$ and with one of them changed.}
+\label{tab:sensitivity}
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+Benchmark & default & $\tau = 0.3$ & $\tau = 3$ & $J_0 - 1$ & $J_0 + 1$ \\
+\midrule
+Sinc-2D [$10^{-2}$] ($J_0 = 6$) & 0.609 & 0.571 & 0.992 & 0.652 & 0.677 \\
+GramacyLee [$10^{-1}$] ($J_0 = 12$) & 0.0667 & 1.63 & 1.95 & 0.366 & 0.0530 \\
+Rosenbrock [$10^{4}$] ($J_0 = 3$) & 0.118 & 0.115 & 0.123 & 0.118 & 0.107 \\
+Brachistochrone [$10^{-2}$] ($J_0 = 12$) & 0.825 & 0.685 & 0.791 & 0.744 & 0.787 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,25 @@
+\begin{table}[t]
+\centering
+\caption{Median time per run spent fitting the surrogate and optimizing the acquisition over the 110 evaluations, one CPU core per run, four seeds per method and benchmark, both methods at Mat\'ern-5/2 and run interleaved on the same nodes.}
+\label{tab:cost}
+\footnotesize
+\begin{tabular}{lrrrr}
+\toprule
+ & \multicolumn{2}{c}{Surrogate fit (s)} & \multicolumn{2}{c}{Acquisition (s)} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5}
+Benchmark & \lzero{} & \method{} & \lzero{} & \method{} \\
+\midrule
+Sinc-1D & 39 & 183 & 75 & 157 \\
+Sinc-2D & 48 & 189 & 83 & 172 \\
+Sinc-3D & 48 & 201 & 74 & 103 \\
+Sinc-4D & 48 & 199 & 82 & 136 \\
+Sinc-5D & 48 & 182 & 88 & 182 \\
+GramacyLee & 41 & 174 & 79 & 125 \\
+Ackley & 49 & 180 & 78 & 174 \\
+Hartmann & 49 & 195 & 84 & 113 \\
+Rosenbrock & 48 & 192 & 87 & 132 \\
+Michalewicz & 49 & 175 & 98 & 177 \\
+Brachistochrone & 39 & 176 & 78 & 152 \\
+\bottomrule
+\end{tabular}
+\end{table}

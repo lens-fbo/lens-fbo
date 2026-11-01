@@ -1,0 +1,14 @@
+{
+ "method": "ours-l2",
+ "target": "rosenbrock",
+ "lengthscale": 0.4,
+ "profile": "matern12",
+ "seed": 6,
+ "tau": 1.0,
+ "initial_acquisitions": 10,
+ "minimum_k": 1,
+ "maximum_k": 10,
+ "acquisitions_each_k": 10,
+ "acquisition_raw_samples": 1024,
+ "acquisition_max_restarts": 16
+}

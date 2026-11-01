@@ -1,0 +1,29 @@
+\begin{table}[t]
+\centering
+\caption{Median best value at the end of the run of \method{} over 16 seeds at each GP profile (M: Mat\'ern), at the RKHS lengthscale selected in the source, and the median reported for \lzero{} by \citet{sartor2026sparse} at the profile they selected for it.}
+\label{tab:profiles}
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+ & \multicolumn{4}{c}{\method{}} & \lzero{} \\
+\cmidrule(lr){2-5} \cmidrule(lr){6-6}
+Benchmark & RBF & M-5/2 & M-3/2 & M-1/2 & reported \\
+\midrule
+Sinc-1D [$10^{-2}$] & 0.0122 & 0.0156 & 0.0196 & 0.354 & 0.06 \\
+Sinc-2D [$10^{-2}$] & 0.613 & 0.609 & 0.772 & 2.46 & 0.76 \\
+Sinc-3D [$10^{-2}$] & 2.03 & 2.00 & 2.12 & 3.09 & 2.74 \\
+Sinc-4D [$10^{-2}$] & 2.43 & 2.45 & 2.46 & 2.79 & 2.47 \\
+Sinc-5D [$10^{-2}$] & 3.53 & 3.60 & 3.74 & 3.57 & 3.40 \\
+GramacyLee [$10^{-1}$] & 0.0354 & 0.0667 & 0.162 & 5.13 & 3.42 \\
+Ackley [$10^{1}$] & 0.177 & 0.0845 & 0.0763 & 0.00414 & 0.09 \\
+Hartmann [$10^{0}$] & 0.776 & 0.774 & 0.774 & 0.776 & 0.78 \\
+Rosenbrock [$10^{4}$] & 0.157 & 0.118 & 0.0870 & 0.232 & 0.20 \\
+Michalewicz [$10^{0}$] & 1.94 & 1.94 & 1.94 & 1.95 & 2.93 \\
+Brachistochrone [$10^{-2}$] & 0.704 & 0.825 & 0.820 & 0.914 & 1.02 \\
+MNIST [$10^{-2}$] & 2.23 & 2.23 & 2.23 & 2.20 & 2.06 \\
+Pendulum [$10^{2}$] & 2.97 & 2.76 & 2.37 & 2.87 & 3.36 \\
+Pinwheel [$10^{0}$] & 1.89 & 1.78 & 1.72 & 1.99 & 0.12 \\
+Hopper [$-10^{0}$] & 2.65 & 2.96 & 2.89 & 2.58 & 2.96 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Robustness to the RKHS lengthscale $\ell$: median best value at the end of the run, \method{} at Mat\'ern-5/2 over 16 seeds / \lzero{} at the best of the four GP profiles for that $\ell$, as reported by \citet{sartor2026sparse}. Bold: the lower median, when the median of \lzero{} lies outside the CI of \method{} and the two differ at the printed precision. MNIST is left out (see the text).}
+\label{tab:robustness}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lcccc}
+\toprule
+Benchmark & $\ell = 0.4$ & $\ell = 0.2$ & $\ell = 0.1$ & $\ell = 0.05$ \\
+\midrule
+GramacyLee [$10^{-1}$] & \textbf{0.0667} / 3.42 & \textbf{3.42} / 5.13 & 6.37 / 6.37 & 6.37 / 6.37 \\
+Ackley [$10^{1}$] & 0.0845 / 0.09 & 1.61 / \textbf{1.52} & 1.68 / \textbf{1.49} & 1.68 / 1.68 \\
+Hartmann [$10^{0}$] & \textbf{0.774} / 0.78 & 1.05 / 1.06 & \textbf{3.13} / 3.20 & \textbf{3.45} / 3.46 \\
+Rosenbrock [$10^{4}$] & \textbf{0.118} / 0.20 & \textbf{1.79} / 2.01 & \textbf{7.07} / 7.25 & 7.83 / 7.84 \\
+Michalewicz [$10^{0}$] & \textbf{1.94} / 2.93 & \textbf{3.62} / 3.67 & 4.35 / 4.35 & 4.37 / 4.37 \\
+Brachistochrone [$10^{-2}$] & \textbf{1.00} / 1.25 & \textbf{0.825} / 1.00 & 0.969 / 1.00 & 2.41 / \textbf{1.90} \\
+Pendulum [$10^{2}$] & \textbf{3.49} / 4.31 & \textbf{2.76} / 3.36 & 2.99 / 3.46 & \textbf{4.47} / 4.87 \\
+Pinwheel [$10^{0}$] & 1.59 / \textbf{0.60} & 1.78 / \textbf{0.12} & 1.58 / \textbf{0.94} & 1.40 / \textbf{1.16} \\
+Hopper [$-10^{0}$] & \textbf{2.07} / 1.76 & 1.77 / 1.77 & 2.96 / 2.96 & \textbf{2.51} / 2.43 \\
+\midrule
+wins / ties / losses & 7 / 1 / 1 & 5 / 2 / 2 & 2 / 5 / 2 & 3 / 4 / 2 \\
+\bottomrule
+\end{tabular}
+\end{table}
